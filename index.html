@@ -9,56 +9,78 @@
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f5f5f7;
-            color: #1d1d1f;
+            background-color: #1c2526;
+            color: #e0e7e9;
             line-height: 1.6;
+            transition: all 0.3s ease;
         }
         header {
-            background-color: #fff;
+            background-color: #2d3839;
             padding: 20px;
             text-align: center;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
             position: sticky;
             top: 0;
             z-index: 100;
+            transition: background-color 0.3s ease;
         }
         header h1 {
             margin: 0;
             font-size: 24px;
             font-weight: 600;
+            color: #fff;
         }
         .hero {
             text-align: center;
-            padding: 60px 20px;
-            background: linear-gradient(135deg, #007aff, #00d4ff);
+            padding: 80px 20px;
+            background: linear-gradient(135deg, #4a5e6d, #7a9ab5);
             color: #fff;
+            transition: padding 0.3s ease;
         }
         .hero h2 {
             font-size: 36px;
             margin: 0 0 20px;
             font-weight: 700;
+            letter-spacing: -0.5px;
         }
         .hero p {
             font-size: 18px;
             max-width: 600px;
             margin: 0 auto 30px;
+            opacity: 0.9;
         }
         .btn {
             display: inline-block;
             padding: 12px 24px;
             background-color: #fff;
-            color: #007aff;
+            color: #4a5e6d;
             text-decoration: none;
             border-radius: 25px;
             font-weight: 600;
-            transition: background-color 0.3s, color 0.3s;
+            transition: all 0.3s ease;
         }
         .btn:hover {
-            background-color: #007aff;
+            background-color: #4a5e6d;
             color: #fff;
+            transform: translateY(-2px);
+        }
+        .screenshot {
+            padding: 40px 20px;
+            text-align: center;
+            background-color: #252f30;
+        }
+        .screenshot img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 12px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+            transition: transform 0.3s ease;
+        }
+        .screenshot img:hover {
+            transform: scale(1.02);
         }
         .features {
-            padding: 40px 20px;
+            padding: 60px 20px;
             max-width: 1200px;
             margin: 0 auto;
             display: grid;
@@ -66,35 +88,49 @@
             gap: 30px;
         }
         .feature-card {
-            background: #fff;
-            padding: 20px;
-            border-radius: 12px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            background: #2d3839;
+            padding: 25px;
+            border-radius: 16px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
             text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
         }
         .feature-card h3 {
             font-size: 20px;
             margin: 0 0 10px;
             font-weight: 600;
+            color: #fff;
         }
         .feature-card p {
             font-size: 16px;
-            color: #6e6e73;
+            color: #a3bffa;
             margin: 0;
         }
         footer {
-            background-color: #fff;
+            background-color: #2d3839;
             padding: 20px;
             text-align: center;
             font-size: 14px;
-            color: #6e6e73;
-            border-top: 1px solid #d2d2d7;
+            color: #a3bffa;
+            border-top: 1px solid #3a4647;
+            transition: background-color 0.3s ease;
         }
         footer a {
-            color: #007aff;
+            color: #4a5e6d;
             text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        footer a:hover {
+            color: #7a9ab5;
         }
         @media (max-width: 600px) {
+            .hero {
+                padding: 60px 15px;
+            }
             .hero h2 {
                 font-size: 28px;
             }
@@ -103,6 +139,10 @@
             }
             .features {
                 grid-template-columns: 1fr;
+                padding: 40px 15px;
+            }
+            .screenshot img {
+                width: 90%;
             }
         }
     </style>
@@ -116,6 +156,10 @@
         <h2>Run iOS Apps Without Installing</h2>
         <p>LiveContainer lets you sideload and run unlimited apps on your iPhone or iPad, bypassing traditional installation limits.</p>
         <a href="https://github.com/khanhduytran0/LiveContainer" class="btn">Get Started</a>
+    </section>
+
+    <section class="screenshot">
+        <img src="livecontainer.png" alt="LiveContainer Screenshot">
     </section>
 
     <section class="features">
@@ -134,7 +178,7 @@
     </section>
 
     <footer>
-        <p>&copy; 2025 LiveContainer. Open-source on <a href="https://github.com/khanhduytran0/LiveContainer">GitHub</a>.</p>
+        <p>© 2025 LiveContainer. Open-source on <a href="https://github.com/khanhduytran0/LiveContainer">GitHub</a>.</p>
     </footer>
 </body>
 </html>
