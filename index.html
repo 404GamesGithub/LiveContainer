@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LiveContainer - Run Apps Without Installing</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f7;
+            color: #1d1d1f;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #fff;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+            font-weight: 600;
+        }
+        .hero {
+            text-align: center;
+            padding: 60px 20px;
+            background: linear-gradient(135deg, #007aff, #00d4ff);
+            color: #fff;
+        }
+        .hero h2 {
+            font-size: 36px;
+            margin: 0 0 20px;
+            font-weight: 700;
+        }
+        .hero p {
+            font-size: 18px;
+            max-width: 600px;
+            margin: 0 auto 30px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            background-color: #fff;
+            color: #007aff;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: 600;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .btn:hover {
+            background-color: #007aff;
+            color: #fff;
+        }
+        .features {
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        .feature-card {
+            background: #fff;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            text-align: center;
+        }
+        .feature-card h3 {
+            font-size: 20px;
+            margin: 0 0 10px;
+            font-weight: 600;
+        }
+        .feature-card p {
+            font-size: 16px;
+            color: #6e6e73;
+            margin: 0;
+        }
+        footer {
+            background-color: #fff;
+            padding: 20px;
+            text-align: center;
+            font-size: 14px;
+            color: #6e6e73;
+            border-top: 1px solid #d2d2d7;
+        }
+        footer a {
+            color: #007aff;
+            text-decoration: none;
+        }
+        @media (max-width: 600px) {
+            .hero h2 {
+                font-size: 28px;
+            }
+            .hero p {
+                font-size: 16px;
+            }
+            .features {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>LiveContainer</h1>
+    </header>
+
+    <section class="hero">
+        <h2>Run iOS Apps Without Installing</h2>
+        <p>LiveContainer lets you sideload and run unlimited apps on your iPhone or iPad, bypassing traditional installation limits.</p>
+        <a href="https://github.com/khanhduytran0/LiveContainer" class="btn">Get Started</a>
+    </section>
+
+    <section class="features">
+        <div class="feature-card">
+            <h3>Unlimited Apps</h3>
+            <p>Break free from the 3-app limit and run as many apps as you want within LiveContainer’s ecosystem.</p>
+        </div>
+        <div class="feature-card">
+            <h3>JIT & JIT-less Modes</h3>
+            <p>Choose between JIT for unsigned apps or JIT-less for seamless signed app execution.</p>
+        </div>
+        <div class="feature-card">
+            <h3>SideStore Compatible</h3>
+            <p>Pair with SideStore for a smooth sideloading experience without jailbreaking.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 LiveContainer. Open-source on <a href="https://github.com/khanhduytran0/LiveContainer">GitHub</a>.</p>
+    </footer>
+</body>
+</html>
